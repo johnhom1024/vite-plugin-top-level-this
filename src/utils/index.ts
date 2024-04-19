@@ -5,9 +5,9 @@ import generate from '@babel/generator';
 
 export class TopLevelThisReplacer {
   // 当前的层级
-  private currentLevel: number = 0;
+  private currentLevel = 0;
   // 是否替换过
-  private hasReplaced: boolean = false;
+  private hasReplaced = false;
   private ast: Node;
   private code: string;
 
